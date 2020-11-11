@@ -9,6 +9,9 @@ git add -A
 git commit -m "your message"
 git push origin branch_name
 
+How to see all your branches
+
+git branch -a
 
 How to change branches
 
