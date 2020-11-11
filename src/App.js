@@ -11,6 +11,7 @@ import logo from './arrowDown.svg';
 import quotation from './speechMarks.svg';
 import camera from './freelance-photography.svg';
 import page from './projects.png';
+import icon from './facebook.svg';
 
 const styles = {}
 
@@ -210,7 +211,23 @@ styles.quote = {
 class Plans extends React.Component {
   render() {
     return (
-        <p>yo</p>
+        <div style={{display: "flex", paddingLeft: "5%", paddingRight: "12%", paddingTop: "5%", backgroundColor: "#f0f2f5"}}>
+
+          <div style={{width: "100%", paddingBottom: "112px", paddingTop: "72px"}}>
+
+            <div style={{margin: "0 auto", padding: "20px 0", width: "980px"}}>
+
+              <div>
+
+                <img src={icon} alt="Facebook logo" />
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
       );
   }
 }
