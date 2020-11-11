@@ -215,11 +215,19 @@ class Plans extends React.Component {
 
           <div style={{width: "100%", paddingBottom: "112px", paddingTop: "72px"}}>
 
-            <div style={{margin: "0 auto", padding: "20px 0", width: "980px"}}>
+            <div style={{display: "flex", margin: "0 auto", padding: "20px 0", width: "980px"}}>
 
-              <div>
+              <div style={{marginRight: "0", paddingRight: "32px", width: "580px"}}>
 
-                <img src={icon} alt="Facebook logo" />
+                <div style={{padding: "116px 0 16px"}}>
+
+                  <img src={icon} alt="Facebook logo" style={{height: "106px", margin: "-26px"}} />
+
+                </div>
+
+                <h2 style={{margin: "0", fontFamily: "SFProDisplay-Regular, Helvetica, Arial, sans-serif", fontSize: "28px", fontWeight: "normal", lineHeight: "32px", width: "500px"}}>
+                  {'Connect with friends and the world around you on Facebook.'}
+                </h2>
 
               </div>
 
