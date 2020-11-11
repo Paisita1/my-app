@@ -231,6 +231,24 @@ class Plans extends React.Component {
 
               </div>
 
+              <div style={{height: "456px", width: "396px"}}>
+
+                <div style={styles.form}>
+
+                  <div>
+
+                    <div style={{fontSize: "17px", width: "364px"}}>
+
+                      <input name="Username" style={{width: "100%"}} />
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
             </div>
 
           </div>
@@ -238,6 +256,15 @@ class Plans extends React.Component {
         </div>
       );
   }
+}
+
+styles.form = {
+  backgroundColor: "white",
+  borderRadius: "8px",
+  boxShadow: "0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1)",
+  marginTop: "40px",
+  padding: "10px 15px 24px",
+  width: "396px"
 }
 
 class Blog extends React.Component {
