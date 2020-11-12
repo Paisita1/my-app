@@ -46,3 +46,7 @@
     /*color: black !important;*/
   }
 }
+
+.fb_email:focus {
+    outline: none;
+}

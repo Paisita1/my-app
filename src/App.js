@@ -99,31 +99,31 @@ class Home extends React.Component {
             <div style={{display: "flex", width: "100%", borderTop: "1px dotted white", marginTop: "30px", paddingTop: "21px"}}>
 
               <div style={{display:"flex", justifyContent: "center", alignItems: "center", width: "30px", height: "30px", border: "1px solid white", borderRadius: "100px", marginRight: "7%", backgroundColor: "white"}}>
-                <a href="https://dribbble.com/" target="_blank" style={{textDecoration: "none", color: "#2cbce8"}}>
+                <a href="https://dribbble.com/" rel="noreferrer" target="_blank" style={{textDecoration: "none", color: "#2cbce8"}}>
                   D
                 </a>
               </div>
 
               <div style={{display:"flex", justifyContent: "center", alignItems: "center", width: "30px", height: "30px", border: "1px solid white", borderRadius: "100px", marginRight: "7%", backgroundColor: "white"}}>
-                <a href="https://www.pinterest.com/" target="_blank" style={{textDecoration: "none", color: "#2cbce8"}}>
+                <a href="https://www.pinterest.com/" rel="noreferrer" target="_blank" style={{textDecoration: "none", color: "#2cbce8"}}>
                   P
                 </a>
               </div>
 
               <div style={{display:"flex", justifyContent: "center", alignItems: "center", width: "30px", height: "30px", border: "1px solid white", borderRadius: "100px", marginRight: "7%", backgroundColor: "white"}}>
-                <a href="https://www.linkedin.com/" target="_blank" style={{textDecoration: "none", color: "#2cbce8"}}>
+                <a href="https://www.linkedin.com/" rel="noreferrer" target="_blank" style={{textDecoration: "none", color: "#2cbce8"}}>
                   L
                 </a>
               </div>
 
               <div style={{display:"flex", justifyContent: "center", alignItems: "center", width: "30px", height: "30px", border: "1px solid white", borderRadius: "100px", marginRight: "7%", backgroundColor: "white"}}>
-                <a href="https://twitter.com/" target="_blank" style={{textDecoration: "none", color: "#2cbce8"}}>
+                <a href="https://twitter.com/" rel="noreferrer" target="_blank" style={{textDecoration: "none", color: "#2cbce8"}}>
                   T
                 </a>
               </div>
 
               <div style={{display:"flex", justifyContent: "center", alignItems: "center", width: "30px", height: "30px", border: "1px solid white", borderRadius: "100px", backgroundColor: "white"}}>
-                <a href="https://www.facebook.com/" target="_blank" style={{textDecoration: "none", color: "#2cbce8"}}>
+                <a href="https://www.facebook.com/" rel="noreferrer" target="_blank" style={{textDecoration: "none", color: "#2cbce8"}}>
                   F
                 </a>
               </div>
@@ -259,7 +259,7 @@ class Plans extends React.Component {
 
                     <div style={{fontSize: "17px", width: "364px", margin: "auto", padding: "6px 0"}}>
 
-                      <input name="email" id="email" placeholder="Email or Phone Number" autofocus="1" onFocus={() => this.whenFocused()} onBlur={() => this.whenBlurred()} style={this.state.style} />
+                      <input className="fb_email" name="email" id="email" placeholder="Email or Phone Number" autofocus="1" onFocus={() => this.whenFocused()} onBlur={() => this.whenBlurred()} style={this.state.style} />
 
                     </div>
 
@@ -293,7 +293,7 @@ styles.inputOnFocus = {
   padding: "14px 16px",
   width: "330px",
   height: "22px",
-  border: "1px solid #dddfe2",
+  border: "1px solid blue",
   boxShadow: "0 0 0 2px #e7f3ff",
   caretColor: "#1877f2"
 }
