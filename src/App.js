@@ -209,6 +209,17 @@ styles.quote = {
 }
 
 class Plans extends React.Component {
+
+  constructor(props) {
+    super(props);
+
+    this.whenFocused = this.whenFocused.bind(this);
+  }
+
+  whenFocused(e) {
+    document.getElementById(e).style.background = "yellow";
+  }
+
   render() {
     return (
         <div style={{display: "flex", paddingLeft: "5%", paddingRight: "12%", paddingTop: "5%", backgroundColor: "#f0f2f5"}}>
@@ -237,9 +248,9 @@ class Plans extends React.Component {
 
                   <div>
 
-                    <div style={{fontSize: "17px", width: "364px"}}>
+                    <div style={{fontSize: "17px", width: "364px", margin: "auto", padding: "6px 0"}}>
 
-                      <input name="Username" style={{width: "100%"}} />
+                      <input name="email" id="email" placeholder="Email or Phone Number" autofocus="1" onFocus="whenFocused(this.id)" style={styles.inputField} />
 
                     </div>
 
@@ -263,8 +274,17 @@ styles.form = {
   borderRadius: "8px",
   boxShadow: "0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1)",
   marginTop: "40px",
-  padding: "10px 15px 24px",
+  padding: "10px 0px 24px",
   width: "396px"
+}
+
+styles.inputField = {
+  fontSize: "17px",
+  borderRadius: "6px",
+  padding: "14px 16px",
+  width: "330px",
+  border: "1px solid #dddfe2",
+  height: "22px"
 }
 
 class Blog extends React.Component {
