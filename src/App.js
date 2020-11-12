@@ -214,6 +214,7 @@ class Plans extends React.Component {
     super(props);
 
     this.whenFocused = this.whenFocused.bind(this);
+    this.whenBlurred = this.whenBlurred.bind(this);
 
     this.state = {
       style: styles.inputOnBlur
@@ -222,6 +223,10 @@ class Plans extends React.Component {
 
   whenFocused() {
     this.setState({style: styles.inputOnFocus});
+  }
+
+  whenBlurred() {
+    this.setState({style: styles.inputOnBlur});
   }
 
   render() {
@@ -254,7 +259,7 @@ class Plans extends React.Component {
 
                     <div style={{fontSize: "17px", width: "364px", margin: "auto", padding: "6px 0"}}>
 
-                      <input name="email" id="email" placeholder="Email or Phone Number" autofocus="1" onFocus={() => this.whenFocused()} style={this.state.style} />
+                      <input name="email" id="email" placeholder="Email or Phone Number" autofocus="1" onFocus={() => this.whenFocused()} onBlur={() => this.whenBlurred()} style={this.state.style} />
 
                     </div>
 
@@ -287,9 +292,10 @@ styles.inputOnFocus = {
   borderRadius: "6px",
   padding: "14px 16px",
   width: "330px",
-  border: "1px solid #dddfe2",
   height: "22px",
-  backgroundColor: "yellow"
+  border: "1px solid #dddfe2",
+  boxShadow: "0 0 0 2px #e7f3ff",
+  caretColor: "#1877f2"
 }
 
 styles.inputOnBlur = {
