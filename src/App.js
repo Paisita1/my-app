@@ -214,10 +214,14 @@ class Plans extends React.Component {
     super(props);
 
     this.whenFocused = this.whenFocused.bind(this);
+
+    this.state = {
+      style: styles.inputOnBlur
+    }
   }
 
-  whenFocused(e) {
-    document.getElementById(e).style.background = "yellow";
+  whenFocused() {
+    this.setState({style: styles.inputOnFocus});
   }
 
   render() {
@@ -250,7 +254,7 @@ class Plans extends React.Component {
 
                     <div style={{fontSize: "17px", width: "364px", margin: "auto", padding: "6px 0"}}>
 
-                      <input name="email" id="email" placeholder="Email or Phone Number" autofocus="1" onFocus="whenFocused(this.id)" style={styles.inputField} />
+                      <input name="email" id="email" placeholder="Email or Phone Number" autofocus="1" onFocus={() => this.whenFocused()} style={this.state.style} />
 
                     </div>
 
@@ -278,7 +282,17 @@ styles.form = {
   width: "396px"
 }
 
-styles.inputField = {
+styles.inputOnFocus = {
+  fontSize: "17px",
+  borderRadius: "6px",
+  padding: "14px 16px",
+  width: "330px",
+  border: "1px solid #dddfe2",
+  height: "22px",
+  backgroundColor: "yellow"
+}
+
+styles.inputOnBlur = {
   fontSize: "17px",
   borderRadius: "6px",
   padding: "14px 16px",
