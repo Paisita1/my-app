@@ -284,7 +284,7 @@ class Plans extends React.Component {
 
                   <div style={{paddingTop: "6px"}}>
 
-                    <button type="button">{'Login'}</button>
+                    <button type="button" style={styles.loginButton}>{'Log in'}</button>
 
                   </div>
 
@@ -307,7 +307,8 @@ styles.form = {
   boxShadow: "0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1)",
   marginTop: "40px",
   padding: "10px 0px 24px",
-  width: "396px"
+  width: "396px",
+  textAlign: "center"
 }
 
 styles.inputOnFocus = {
@@ -331,7 +332,16 @@ styles.inputOnBlur = {
 }
 
 styles.loginButton = {
-  
+  backgroundColor: "#1877f2",
+  border: "none",
+  borderRadius: "6px",
+  fontSize: "20px",
+  lineHeight: "48px",
+  padding: "0 16px",
+  width: "368px",
+  margin: "auto",
+  fontWeight: "bold",
+  color: "white"
 }
 
 class Blog extends React.Component {
