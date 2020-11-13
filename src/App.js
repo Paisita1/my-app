@@ -288,6 +288,12 @@ class Plans extends React.Component {
 
                   </div>
 
+                  <div style={{marginTop: "16px"}}>
+
+                    <a href="" rel="noreferrer" target="_blank" style={{fontFamily: "Helvetica, Arial, sans-serif", color: "#1877f2", fontSize: "14px", fontWeight: "500", textDecoration: "none"}}>{'Forgot Password?'}</a>
+
+                  </div>
+
                 </div>
 
               </div>
