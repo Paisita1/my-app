@@ -217,16 +217,27 @@ class Plans extends React.Component {
     this.whenBlurred = this.whenBlurred.bind(this);
 
     this.state = {
-      style: styles.inputOnBlur
+      email: styles.inputOnBlur,
+      password: styles.inputOnBlur
     }
   }
 
-  whenFocused() {
-    this.setState({style: styles.inputOnFocus});
+  whenFocused(e) {
+    if(e == 1) {
+      this.setState({password: styles.inputOnFocus});
+    }
+    else {
+      this.setState({email: styles.inputOnFocus});
+    }
   }
 
-  whenBlurred() {
-    this.setState({style: styles.inputOnBlur});
+  whenBlurred(e) {
+    if(e == 1) {
+      this.setState({password: styles.inputOnBlur});
+    }
+    else {
+      this.setState({email: styles.inputOnBlur});
+    }
   }
 
   render() {
@@ -259,9 +270,21 @@ class Plans extends React.Component {
 
                     <div style={{fontSize: "17px", width: "364px", margin: "auto", padding: "6px 0"}}>
 
-                      <input className="fb_email" name="email" id="email" placeholder="Email or Phone Number" autofocus="1" onFocus={() => this.whenFocused()} onBlur={() => this.whenBlurred()} style={this.state.style} />
+                      <input className="fb_email" name="email" id="email" placeholder="Email or Phone Number" autofocus="1" onFocus={() => this.whenFocused(0)} onBlur={() => this.whenBlurred(0)} style={this.state.email} />
 
                     </div>
+
+                    <div style={{fontSize: "17px", width: "364px", margin: "auto", padding: "6px 0"}}>
+
+                      <input type="password" className="fb_email" name="password" id="password" placeholder="Password" onFocus={() => this.whenFocused(1)} onBlur={() => this.whenBlurred(1)} style={this.state.password} />
+
+                    </div>
+
+                  </div>
+
+                  <div style={{paddingTop: "6px"}}>
+
+                    <button type="button">{'Login'}</button>
 
                   </div>
 
@@ -293,7 +316,7 @@ styles.inputOnFocus = {
   padding: "14px 16px",
   width: "330px",
   height: "22px",
-  border: "1px solid blue",
+  border: "1px solid #1877f2",
   boxShadow: "0 0 0 2px #e7f3ff",
   caretColor: "#1877f2"
 }
@@ -305,6 +328,10 @@ styles.inputOnBlur = {
   width: "330px",
   border: "1px solid #dddfe2",
   height: "22px"
+}
+
+styles.loginButton = {
+  
 }
 
 class Blog extends React.Component {
