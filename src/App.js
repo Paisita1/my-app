@@ -294,6 +294,20 @@ class Plans extends React.Component {
 
                   </div>
 
+                  <div style={{borderBottom: "1px solid #dadde1", margin: "20px 16px", }}></div>
+
+                  <div style={{paddingTop: "6px"}}>
+
+                    <button type="button" style={styles.createAcc}>{'Create New Account'}</button>
+
+                  </div>
+
+                </div>
+
+                <div style={{color: "#1c1e21", fontFamily: "SFProText-Regular, Helvetica, Arial, sans-serif", }}>
+
+
+
                 </div>
 
               </div>
@@ -348,6 +362,18 @@ styles.loginButton = {
   margin: "auto",
   fontWeight: "bold",
   color: "white"
+}
+
+styles.createAcc = {
+  color: "white",
+  fontFamily: "Helvetica, Arial, sans-serif",
+  fontWeight: "600",
+  border: "none",
+  borderRadius: "6px",
+  fontSize: "17px",
+  lineHeight: "48px",
+  padding: "0 16px",
+  backgroundColor: "#42b72a"
 }
 
 class Blog extends React.Component {
