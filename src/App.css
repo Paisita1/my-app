@@ -37,13 +37,10 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
-  body {
-    /*background-color: black;*/
-  }
-
-  .navButton {
+@media only screen and (max-width: 1049px) {
+  .facebookText {
     /*color: black !important;*/
+    font-size: 14px;
   }
 }
 
