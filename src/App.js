@@ -246,7 +246,7 @@ class Plans extends React.Component {
 
           <div style={{width: "100%", paddingBottom: "112px", paddingTop: "72px"}}>
 
-            <div style={{display: "flex", margin: "0 auto", padding: "20px 0", width: "980px"}}>
+            <div className="divContainer" style={{display: "flex", margin: "0 auto", padding: "20px 0", maxWidth: "980px"}}>
 
               <div style={{marginRight: "0", paddingRight: "32px", width: "580px"}}>
 
@@ -256,7 +256,7 @@ class Plans extends React.Component {
 
                 </div>
 
-                <h2 className="facebookText" style={{margin: "0", fontFamily: "SFProDisplay-Regular, Helvetica, Arial, sans-serif", fontSize: "28px", fontWeight: "normal", lineHeight: "32px", width: "500px"}}>
+                <h2 className="facebookText" style={{margin: "0", fontFamily: "SFProDisplay-Regular, Helvetica, Arial, sans-serif", fontSize: "28px", fontWeight: "normal", lineHeight: "32px", maxWidth: "449px"}}>
                   {'Connect with friends and the world around you on Facebook.'}
                 </h2>
 

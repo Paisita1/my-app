@@ -40,7 +40,14 @@
 @media only screen and (max-width: 1049px) {
   .facebookText {
     /*color: black !important;*/
-    font-size: 14px;
+    font-size: 24px !important;
+    /*width: auto;*/
+  }
+}
+
+@media only screen and (max-width: 997px) {
+  .divContainer {
+    flex-direction: column;
   }
 }
 
