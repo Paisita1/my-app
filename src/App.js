@@ -304,9 +304,11 @@ class Plans extends React.Component {
 
                 </div>
 
-                <div style={{color: "#1c1e21", fontFamily: "SFProText-Regular, Helvetica, Arial, sans-serif", }}>
+                <div style={{color: "#1c1e21", fontFamily: "SFProText-Regular, Helvetica, Arial, sans-serif", fontSize: "14px", textAlign: "center", marginTop: "28px"}}>
 
+                  <a href="" rel="noreferrer" target="_blank" style={{textDecoration:"none", color: "#1c1e21", fontFamily: "SFProText-Semibold, Helvetica, Arial, sans-serif", fontSize: "14px", fontWeight: "600"}}>Create a Page</a>
 
+                  {'  for a celebrity, band or business.'}
 
                 </div>
 
