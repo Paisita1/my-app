@@ -48,6 +48,17 @@
 @media only screen and (max-width: 997px) {
   .divContainer {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .divLogoWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .facebookText {
+    text-align: center;
   }
 }
 

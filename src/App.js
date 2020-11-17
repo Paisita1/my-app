@@ -242,13 +242,13 @@ class Plans extends React.Component {
 
   render() {
     return (
-        <div style={{display: "flex", paddingLeft: "5%", paddingRight: "12%", paddingTop: "5%", backgroundColor: "#f0f2f5"}}>
+        <div style={{display: "flex", paddingLeft: "5%", paddingRight: "7%", paddingTop: "5%", backgroundColor: "#f0f2f5"}}>
 
           <div style={{width: "100%", paddingBottom: "112px", paddingTop: "72px"}}>
 
             <div className="divContainer" style={{display: "flex", margin: "0 auto", padding: "20px 0", maxWidth: "980px"}}>
 
-              <div style={{marginRight: "0", paddingRight: "32px", width: "580px"}}>
+              <div className="divLogoWrapper" style={{marginRight: "0", paddingRight: "32px", maxWidth: "580px"}}>
 
                 <div style={{padding: "116px 0 16px"}}>
 
@@ -262,7 +262,7 @@ class Plans extends React.Component {
 
               </div>
 
-              <div style={{height: "456px", width: "396px"}}>
+              <div style={{height: "456px", maxWidth: "396px"}}>
 
                 <div style={styles.form}>
 
@@ -328,8 +328,8 @@ styles.form = {
   borderRadius: "8px",
   boxShadow: "0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1)",
   marginTop: "40px",
-  padding: "10px 0px 24px",
-  width: "396px",
+  padding: "10px 15px 24px",
+  maxWidth: "396px",
   textAlign: "center"
 }
 
