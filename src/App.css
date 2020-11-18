@@ -65,3 +65,7 @@
 .fb_email:focus {
     outline: none;
 }
+
+.flexBar:hover {
+  color: orange !important;
+}

@@ -384,11 +384,11 @@ class Blog extends React.Component {
     return (
         <div style={{display: "flex", backgroundColor: "black"}}>
 
-          <div style={{display: "flex", marginTop: "27px", width: "100%", borderBottom: "1px solid orange"}}>
+          <div style={{display: "flex", margin: "27px 0", width: "100%", borderBottom: "1px solid orange"}}>
 
             <div style={{
                 borderRight: '1px solid rgb(32, 28, 41)',
-                marginRight: '10px',
+                /*marginRight: '10px',*/
                 paddingRight: '10px',
               }}
             >
@@ -399,13 +399,13 @@ class Blog extends React.Component {
             </div>
 
             <div style={{display: "flex", fontFamily: "Ringside Regular A,Ringside Regular B,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif", fontWeight: "600"}}>
-              <a href="" target="_blank" style={styles.navBarItems}>{'Articles'}</a>
-              <a href="" target="_blank" style={styles.navBarItems}>{'Videos'}</a>
-              <a href="" target="_blank" style={styles.navBarItems}>{'Almanic'}</a>
-              <a href="" target="_blank" style={styles.navBarItems}>{'Newsletter'}</a>
-              <a href="" target="_blank" style={styles.navBarItems}>{'Guides'}</a>
-              <a href="" target="_blank" style={styles.navBarItems}>{'Books'}</a>
-              <a href="" target="_blank" style={styles.navBarItems}>{'Account'}</a>
+              <a className="flexBar" href="" target="_blank" style={styles.navBarItems}>{'Articles'}</a>
+              <a className="flexBar" href="" target="_blank" style={styles.navBarItems}>{'Videos'}</a>
+              <a className="flexBar" href="" target="_blank" style={styles.navBarItems}>{'Almanic'}</a>
+              <a className="flexBar" href="" target="_blank" style={styles.navBarItems}>{'Newsletter'}</a>
+              <a className="flexBar" href="" target="_blank" style={styles.navBarItems}>{'Guides'}</a>
+              <a className="flexBar" href="" target="_blank" style={styles.navBarItems}>{'Books'}</a>
+              <a className="flexBar" href="" target="_blank" style={styles.navBarItems}>{'Account'}</a>
             </div>
 
           </div>
@@ -420,11 +420,11 @@ styles.navBarItems = {
     alignItems: "flex-end",
     color: "white",
     textDecoration: "none",
-    margin: "0px 10px",
+    marginLeft: "10px",
     borderRight: "1px solid #201c29",
     paddingRight: "10px",
     paddingBottom: "13px",
-    fontSize: "13px"
+    fontSize: "13px",
 }
 
 class Trial extends React.Component {
