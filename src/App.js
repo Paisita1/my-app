@@ -384,7 +384,7 @@ class Blog extends React.Component {
     return (
         <div style={{display: "flex", backgroundColor: "black"}}>
 
-          <div style={{display: "flex", margin: "27px 0", width: "100%", borderBottom: "1px solid orange"}}>
+          <div style={{display: "flex", margin: "27px 0", width: "100%", borderBottom: "1px solid orange", paddingBottom: "15px"}}>
 
             <div style={{
                 borderRight: '1px solid rgb(32, 28, 41)',
@@ -392,7 +392,7 @@ class Blog extends React.Component {
                 paddingRight: '10px',
               }}
             >
-                <h2 style={{color: "white"}}>
+                <h2 style={{color: "white", marginBottom: "15px", fontSize: "2em"}}>
                   {'CSS-TRICKS'}
                 </h2>
               
@@ -423,7 +423,7 @@ styles.navBarItems = {
     marginLeft: "10px",
     borderRight: "1px solid #201c29",
     paddingRight: "10px",
-    paddingBottom: "13px",
+    paddingBottom: "5px",
     fontSize: "13px",
 }
 
