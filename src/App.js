@@ -408,6 +408,10 @@ class Blog extends React.Component {
               <a className="flexBar" href="" target="_blank" style={styles.navBarItems}>{'Account'}</a>
             </div>
 
+            <div style={{display: "flex", marginLeft: "30px", paddingTop: "20px", paddingBottom: "15px"}}>
+              <input type="search" style={{backgroundColor: "#201c29", color: "white", border: 0, fontSize: "100%", borderBottomLeftRadius: "27px", borderTopLeftRadius: "27px", paddingLeft: "20px"}} placeholder="e.g flexbox" />
+            </div>
+
           </div>
 
         </div>
