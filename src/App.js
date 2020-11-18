@@ -386,9 +386,17 @@ class Blog extends React.Component {
 
           <div style={{display: "flex", marginTop: "27px", width: "100%", borderBottom: "1px solid orange"}}>
 
-            <h2 style={{color: "white"}}>
-              {'CSS-TRICKS'}
-            </h2>
+            <div style={{
+                borderRight: '1px solid rgb(32, 28, 41)',
+                marginRight: '10px',
+                paddingRight: '10px',
+              }}
+            >
+                <h2 style={{color: "white"}}>
+                  {'CSS-TRICKS'}
+                </h2>
+              
+            </div>
 
             <div style={{display: "flex", fontFamily: "Ringside Regular A,Ringside Regular B,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif", fontWeight: "600"}}>
               <a href="" target="_blank" style={styles.navBarItems}>{'Articles'}</a>
