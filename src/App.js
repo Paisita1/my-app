@@ -382,9 +382,9 @@ styles.createAcc = {
 class Blog extends React.Component {
   render() {
     return (
-        <div style={{display: "flex", backgroundColor: "black"}}>
+        <div style={{display: "flex", flexDirection: "column", backgroundColor: "black"}}>
 
-          <div style={{display: "flex", margin: "27px 0", width: "100%", borderBottom: "1px solid orange", paddingBottom: "15px"}}>
+          <div style={{display: "flex", margin: "27px 0", width: "100%", borderBottom: "1px solid orange", paddingBottom: "15px", paddingLeft: "50px"}}>
 
             <div style={{
                 borderRight: '1px solid rgb(32, 28, 41)',
@@ -412,9 +412,23 @@ class Blog extends React.Component {
 
               <input type="search" style={{backgroundColor: "#201c29", color: "white", border: 0, fontSize: "100%", borderBottomLeftRadius: "27px", borderTopLeftRadius: "27px", paddingLeft: "20px", width: "270px"}} placeholder="e.g flexbox" />
 
-              <button type="button" style={{backgroundColor: "orange", border: 0,}} />
+              <button type="button" style={{backgroundColor: "orange", border: 0, padding: "0 22px 0 7px", width: "55px", borderTopRightRadius: "27px", borderBottomRightRadius: "27px", borderTopLeftRadius: "8px", borderBottomLeftRadius: "8px"}}>
+                {'search'}
+              </button>
 
             </div>
+
+          </div>
+
+          <div style={{paddingLeft: "50px"}}>
+
+            <div style={{color: "grey"}}>
+              {'Guide'}
+            </div>
+
+            <h1 style={{color: "white"}}>
+              {'A Complete Guide to Flexbox'}
+            </h1>
 
           </div>
 
