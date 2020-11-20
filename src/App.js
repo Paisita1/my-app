@@ -426,9 +426,104 @@ class Blog extends React.Component {
               {'Guide'}
             </div>
 
-            <h1 style={{color: "white"}}>
+            <h1 style={{
+                color: "white",
+                fontFamily: "Ringside Regular A,Ringside Regular B,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif",
+                fontSize: "2.5rem",
+                margin: "0 0 1.5rem"
+              }}
+            >
               {'A Complete Guide to Flexbox'}
             </h1>
+
+            <div style={{margin: "0 0 1.5rem"}}>
+
+              <div style={{
+                  color: "#7a7a8c",
+                  fontFamily: "Ringside Regular A,Ringside Regular B,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif",
+                  fontSize: ".7rem",
+                  marginBottom: "3px"
+                }}
+              >
+                {'Last Updated'}
+              </div>
+
+              <div style={{
+                  color: "white",
+                  fontSize: ".9rem"
+                }}
+              >
+                {'Oct 22, 2020'}
+              </div>
+
+            </div>
+
+            <div style={{maxWidth: "590px"}}>
+
+            <p style={{
+                color: "#c2c2c2",
+                fontFamily: "Sentinel SSm A,Sentinel SSm B,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol",
+                fontSize: "1.3rem",
+                margin: "0 0 1.5rem"
+              }}
+            >
+              {`Our comprehensive guide to CSS flexbox layout. This complete guide explains everything 
+                about flexbox, focusing on all the different possible properties for the parent element (the flex container) 
+                and the child elements (the flex items). It also includes history, demos, patterns, and a browser support chart.`}
+            </p>
+
+            </div>
+
+          </div>
+
+          <div style={{
+              backgroundColor: "White",
+              padding: "1rem 1rem 1rem 50px"
+            }}
+          >
+
+            <div>
+
+              <h3 style={{
+                  
+                }}
+              >
+                <a className="textLinks" href="" style={{
+                    color: "black",
+                    textDecoration: "none",
+                    fontFamily: "Ringside Regular A,Ringside Regular B,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif",
+                    fontSize: "2.2rem",
+                    fontWeight: "700",
+                    textDecoration: "underline",
+                    textDecorationColor: "#a2dffb"
+                  }}
+                >{'Background'}</a>
+              </h3>
+
+              <h3>
+                <a className="textLinks" href="" style={{
+                      color: "black",
+                      textDecoration: "none",
+                      fontFamily: "Ringside Regular A,Ringside Regular B,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif",
+                      fontSize: "2.2rem",
+                      fontWeight: "700",
+                      textDecoration: "underline",
+                      textDecorationColor: "#a2dffb"
+                    }}
+                  >{'Basics & Terminology'}</a>
+              </h3>
+
+            </div>
+
+            <div>
+
+            <div>
+            </div>
+
+            <div>
+            </div>
+
+            </div>
 
           </div>
 

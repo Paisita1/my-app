@@ -69,3 +69,8 @@
 .flexBar:hover {
   color: orange !important;
 }
+
+.textLinks:hover {
+  text-decoration: none !important;
+  color: orange !important;
+}
