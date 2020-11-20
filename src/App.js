@@ -12,6 +12,8 @@ import quotation from './speechMarks.svg';
 import camera from './freelance-photography.svg';
 import page from './projects.png';
 import icon from './facebook.svg';
+import container from './divcontainer.svg';
+import items from './divitems.svg';
 
 const styles = {}
 
@@ -515,13 +517,35 @@ class Blog extends React.Component {
 
             </div>
 
-            <div>
+            <div style={{display: "flex"}}>
 
-            <div>
-            </div>
+              <div style={{display: "flex", flexFlow: "column", width: "50%"}}>
 
-            <div>
-            </div>
+                <img src={container} style={{width: "75%"}} />
+
+                <h2 style={{
+                    fontSize: "2.5rem",
+                    marginBottom: "0"
+                  }}
+                >
+                  {'Properties for the Parent'}
+                </h2>
+
+                <h2 style={{
+                    fontSize: "2.5rem",
+                    marginTop: "0"
+                  }}
+                >
+                  {'(flex container)'}
+                </h2>
+
+              </div>
+
+              <div style={{display: "flex", flexFlow: "column", width: "50%"}}>
+
+                <img src={items} style={{width: "75%"}} />
+
+              </div>
 
             </div>
 
