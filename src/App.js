@@ -414,7 +414,7 @@ class Blog extends React.Component {
 
               <input type="search" style={{backgroundColor: "#201c29", color: "white", border: 0, fontSize: "100%", borderBottomLeftRadius: "27px", borderTopLeftRadius: "27px", paddingLeft: "20px", width: "270px"}} placeholder="e.g flexbox" />
 
-              <button type="button" style={{backgroundColor: "orange", border: 0, padding: "0 22px 0 7px", width: "55px", borderTopRightRadius: "27px", borderBottomRightRadius: "27px", borderTopLeftRadius: "8px", borderBottomLeftRadius: "8px"}}>
+              <button type="button" style={{background: "linear-gradient(90deg,#ff8a00,#e52e71)", color: "white", border: 0, padding: "0 22px 0 7px", width: "55px", borderTopRightRadius: "27px", borderBottomRightRadius: "27px", borderTopLeftRadius: "8px", borderBottomLeftRadius: "8px"}}>
                 {'search'}
               </button>
 
@@ -519,7 +519,7 @@ class Blog extends React.Component {
 
             <div style={{display: "flex"}}>
 
-              <div style={{display: "flex", flexFlow: "column", width: "50%"}}>
+              <div style={{display: "flex", flexFlow: "column", width: "50%", paddingRight: "30px"}}>
 
                 <img src={container} style={{width: "75%"}} />
 
@@ -538,6 +538,32 @@ class Blog extends React.Component {
                 >
                   {'(flex container)'}
                 </h2>
+
+                <div style={{
+                    background: "linear-gradient(rgba(156,39,176,.2),#fff)",
+                    padding: "2rem",
+
+                  }}
+                >
+
+                <div>
+
+                  <h2 style={{
+                      margin: "0 0 .8rem",
+                      fontFamily: "Ringside Regular A,Ringside Regular B,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif",
+                      fontSize: "1.8rem"
+                    }}
+                  >
+                    {'display'}
+                  </h2>
+
+                  <p>
+                    {'This defines a flex container; inline or block depending on the given value. It enables a flex context for all its direct children.'}
+                  </p>
+
+                </div>
+
+                </div>
 
               </div>
 
@@ -560,6 +586,10 @@ class Blog extends React.Component {
                 >
                   {'(flex items)'}
                 </h2>
+
+                <div>
+
+                </div>
 
               </div>
 
