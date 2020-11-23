@@ -14,6 +14,8 @@ import page from './projects.png';
 import icon from './facebook.svg';
 import container from './divcontainer.svg';
 import items from './divitems.svg';
+import itemsExample1 from './itemsimg1.svg'
+//import code1 from './code1.png';
 
 const styles = {}
 
@@ -542,26 +544,69 @@ class Blog extends React.Component {
                 <div style={{
                     background: "linear-gradient(rgba(156,39,176,.2),#fff)",
                     padding: "2rem",
-
                   }}
                 >
 
-                <div>
+                  <div>
 
-                  <h2 style={{
-                      margin: "0 0 .8rem",
-                      fontFamily: "Ringside Regular A,Ringside Regular B,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif",
-                      fontSize: "1.8rem"
-                    }}
-                  >
-                    {'display'}
-                  </h2>
+                    <h2 style={{
+                        margin: "0 0 .8rem",
+                        fontFamily: "Ringside Regular A,Ringside Regular B,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif",
+                        fontSize: "1.8rem"
+                      }}
+                    >
+                      {'display'}
+                    </h2>
 
-                  <p>
-                    {'This defines a flex container; inline or block depending on the given value. It enables a flex context for all its direct children.'}
-                  </p>
+                    <p style={{
+                        fontFamily: "Sentinel SSm A,Sentinel SSm B,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol",
+                        fontSize: "1.3rem",
+                        margin: "0 0 1.5rem"
+                      }}
+                    >
+                      {`This defines a flex container; inline or block depending on the given value. 
+                        It enables a flex context for all its direct children.`}
+                    </p>
 
-                </div>
+                    {/*<img src={code1} alt="code" style={{maxWidth: "100%", borderRadius: "15px", marginBottom: "1.5rem"}} />*/}
+                    <div style={{display: "flex", flexFlow: "column", backgroundColor: "#001628", padding: "15px 20px 12px 22px", borderRadius: "15px", marginBottom: "1.5rem"}}>
+                      
+                      <code style={{
+                          color: "#72e0d1",
+                        }}
+                      >
+                        <span style={{color: "#f5d67b"}}>.container</span> {' {'}
+                      </code>
+
+                      <code style={{
+                          color: "#72e0d1",
+                          margin: "10px 0 10px 15px"
+                        }}
+                      >
+                        {'  display:'} <span style={{color: "#f5d67b"}}>flex</span>; <span style={{color: "#5e7671", fontStyle: "italic"}}>/* or inline-flex */</span>
+                      </code>
+
+                      <code style={{
+                          color: "#72e0d1",
+                          margin: "0"
+                        }}
+                      >
+                       {'}'}
+                      </code>
+
+                    </div>
+
+                    <p style={{
+                        fontFamily: "Sentinel SSm A,Sentinel SSm B,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol",
+                        fontSize: "1.3rem",
+                        margin: "0 0 1.5rem",
+                        maxWidth: "500px"
+                      }}
+                    >
+                      {'Note that CSS columns have no effect on a flex container.'}
+                    </p>
+
+                  </div>
 
                 </div>
 
@@ -587,7 +632,26 @@ class Blog extends React.Component {
                   {'(flex items)'}
                 </h2>
 
-                <div>
+                <div style={{
+                    background: "linear-gradient(rgba(255,138,0,.2),#fff)",
+                    padding: "2rem",
+                  }}
+                >
+
+                  <div>
+
+                    <h2 style={{
+                        margin: "0 0 .8rem",
+                        fontFamily: "Ringside Regular A,Ringside Regular B,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif",
+                        fontSize: "1.8rem"
+                      }}
+                    >
+                      {'order'}
+                    </h2>
+
+                    <img src={itemsExample1} alt="picture" style={{width: "100px"}} />
+
+                  </div>
 
                 </div>
 
