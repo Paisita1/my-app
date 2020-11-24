@@ -568,7 +568,7 @@ class Blog extends React.Component {
                         It enables a flex context for all its direct children.`}
                     </p>
 
-                    <div style={{display: "flex", flexFlow: "column", backgroundColor: "#001628", padding: "18px 20px 20px 22px", borderRadius: "8px", marginBottom: "1.5rem"}}>
+                    <div style={{display: "flex", flexFlow: "column", backgroundColor: "#001628", padding: "18px 20px 20px 22px", borderRadius: "8px", marginBottom: "1.5rem", maxWidth: "525px"}}>
                       
                       <code style={{
                           color: "#72e0d1",
@@ -645,7 +645,7 @@ class Blog extends React.Component {
                       padding: "18px 20px 20px 22px",
                       borderRadius: "8px",
                       marginBottom: "1.5rem",
-                      maxWidth: "600px",
+                      maxWidth: "525px",
                       overflowX: "scroll",
                     }}
                   >
@@ -659,7 +659,8 @@ class Blog extends React.Component {
 
                     <code style={{
                         color: "#72e0d1",
-                        margin: "10px 0 10px 15px"
+                        margin: "10px 0 10px 15px",
+                        minWidth: "600px",
                       }}
                     >
                       {'  flex-direction:'} <span style={{color: "#f5d67b"}}>row | row-reverse | column | column-reverse</span>;
