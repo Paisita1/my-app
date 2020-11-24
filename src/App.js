@@ -14,8 +14,8 @@ import page from './projects.png';
 import icon from './facebook.svg';
 import container from './divcontainer.svg';
 import items from './divitems.svg';
-import itemsExample1 from './itemsimg1.svg'
-//import code1 from './code1.png';
+import itemsExample1 from './itemsimg1.svg';
+import containerExample1 from './containerimg1.svg';
 
 const styles = {}
 
@@ -568,8 +568,7 @@ class Blog extends React.Component {
                         It enables a flex context for all its direct children.`}
                     </p>
 
-                    {/*<img src={code1} alt="code" style={{maxWidth: "100%", borderRadius: "15px", marginBottom: "1.5rem"}} />*/}
-                    <div style={{display: "flex", flexFlow: "column", backgroundColor: "#001628", padding: "15px 20px 12px 22px", borderRadius: "15px", marginBottom: "1.5rem"}}>
+                    <div style={{display: "flex", flexFlow: "column", backgroundColor: "#001628", padding: "18px 20px 20px 22px", borderRadius: "8px", marginBottom: "1.5rem"}}>
                       
                       <code style={{
                           color: "#72e0d1",
@@ -607,6 +606,91 @@ class Blog extends React.Component {
                     </p>
 
                   </div>
+
+                </div>
+
+                <div style={{
+                    background: "linear-gradient(rgba(156,39,176,.2),#fff)",
+                    padding: "2rem",
+                  }}
+                >
+
+                  <h2 style={{
+                      margin: "0 0 .8rem",
+                      fontFamily: "Ringside Regular A,Ringside Regular B,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif",
+                      fontSize: "1.8rem"
+                    }}
+                  >
+                    {'flex-direction'}
+                  </h2>
+
+                  <img src={containerExample1} alt="img" style={{width: "70%", marginBottom: "3rem"}} />
+
+                  <p style={{
+                      fontFamily: "Sentinel SSm A,Sentinel SSm B,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol",
+                      fontSize: "1.3rem",
+                      margin: "0 0 1.8rem",
+                      width: "95%"
+                    }}
+                  >
+                    {`This establishes the main-axis, thus defining the direction flex items are placed in the flex container. 
+                      Flexbox is (aside from optional wrapping) a single-direction layout concept. 
+                      Think of flex items as primarily laying out either in horizontal rows or vertical columns.`}
+                  </p>
+
+                  <div style={{
+                      display: "flex",
+                      flexFlow: "column",
+                      backgroundColor: "#001628",
+                      padding: "18px 20px 20px 22px",
+                      borderRadius: "8px",
+                      marginBottom: "1.5rem",
+                      maxWidth: "600px",
+                      overflowX: "scroll",
+                    }}
+                  >
+                      
+                    <code style={{
+                        color: "#72e0d1",
+                      }}
+                    >
+                      <span style={{color: "#f5d67b"}}>.container</span> {' {'}
+                    </code>
+
+                    <code style={{
+                        color: "#72e0d1",
+                        margin: "10px 0 10px 15px"
+                      }}
+                    >
+                      {'  flex-direction:'} <span style={{color: "#f5d67b"}}>row | row-reverse | column | column-reverse</span>;
+                    </code>
+
+                    <code style={{
+                        color: "#72e0d1",
+                        margin: "0"
+                      }}
+                    >
+                     {'}'}
+                    </code>
+
+                  </div>
+
+                  <ul>
+
+                    <li>
+                      row (default): left to right in ltr; right to left in rtl
+                    </li>
+                    <li>
+                      row-reverse: right to left in ltr; left to right in rtl
+                    </li>
+                    <li>
+                      column: same as row but top to bottom
+                    </li>
+                    <li>
+                      column-reverse: same as row-reverse but bottom to top
+                    </li>
+
+                  </ul>
 
                 </div>
 
@@ -649,7 +733,45 @@ class Blog extends React.Component {
                       {'order'}
                     </h2>
 
-                    <img src={itemsExample1} alt="picture" style={{width: "100px"}} />
+                    <img src={itemsExample1} alt="picture" style={{width: "70%", marginBottom: "1.5rem"}} />
+
+                    <p style={{
+                        fontFamily: "Sentinel SSm A,Sentinel SSm B,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol",
+                        fontSize: "1.3rem",
+                        margin: "0 0 1.5rem"
+                      }}
+                    >
+                      {'By default, flex items are laid out in the source order. However, the '}
+                      <code style={{padding: ".1rem .3rem .2rem",backgroundColor: "#fff6ea"}}>order</code>
+                      {' property controls the order in which they appear in the flex container.'}
+                    </p>
+
+                    <div style={{display: "flex", flexFlow: "column", backgroundColor: "#001628", padding: "18px 20px 20px 22px", borderRadius: "8px", marginBottom: "1.5rem"}}>
+                      
+                      <code style={{
+                          color: "#72e0d1",
+                        }}
+                      >
+                        <span style={{color: "#f5d67b"}}>.item</span> {' {'}
+                      </code>
+
+                      <code style={{
+                          color: "#72e0d1",
+                          margin: "10px 0 10px 15px"
+                        }}
+                      >
+                        {'  order: '} <span style={{color: "#fc9463"}}>5</span>; <span style={{color: "#5e7671", fontStyle: "italic"}}>/* default is 0 */</span>
+                      </code>
+
+                      <code style={{
+                          color: "#72e0d1",
+                          margin: "0"
+                        }}
+                      >
+                       {'}'}
+                      </code>
+
+                    </div>
 
                   </div>
 
