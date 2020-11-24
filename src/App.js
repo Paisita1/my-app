@@ -676,19 +676,100 @@ class Blog extends React.Component {
 
                   </div>
 
-                  <ul>
+                  <ul style={{
+                      fontFamily: "Sentinel SSm A,Sentinel SSm B,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol",
+                      fontSize: "1.3rem",
+                      margin: "0 0 1.5rem",
+                      lineHeight: "1.5",
+                      maxWidth: "460px"
+                    }}
+                  >
 
-                    <li>
-                      row (default): left to right in ltr; right to left in rtl
+                    <li style={{
+                        color: "#ff8a00",
+                        fontSize: ".9rem",
+                        textIndent: "-.3rem",
+                        marginBottom: "5px"
+                      }}
+                    >
+
+                      <span style={{
+                          fontSize: "1.3rem",
+                          marginLeft: "5px",
+                          color: "#2e2f3e"
+                        }}
+                      >
+                        <code style={{padding: ".1rem .3rem .2rem",backgroundColor: "#fff6ea"}}>row</code>
+                        {' (default): left to right in '}
+                        <code style={{padding: ".1rem .3rem .2rem",backgroundColor: "#fff6ea"}}>ltr</code>
+                        {'; right to left in '}
+                        <code style={{padding: ".1rem .3rem .2rem",backgroundColor: "#fff6ea"}}>rtl</code>
+                      </span>
+
                     </li>
-                    <li>
-                      row-reverse: right to left in ltr; left to right in rtl
+                    <li style={{
+                        color: "#ff8a00",
+                        fontSize: ".9rem",
+                        textIndent: "-.3rem",
+                        marginBottom: "5px"
+                      }}
+                    >
+
+                      <span style={{
+                          fontSize: "1.3rem",
+                          marginLeft: "5px",
+                          color: "#2e2f3e"
+                        }}
+                      >
+                        <code style={{padding: ".1rem .3rem .2rem",backgroundColor: "#fff6ea"}}>row-reverse</code>
+                        {': right to left in '}
+                        <code style={{padding: ".1rem .3rem .2rem",backgroundColor: "#fff6ea"}}>ltr</code>
+                        {'; left to right in '}
+                        <code style={{padding: ".1rem .3rem .2rem",backgroundColor: "#fff6ea"}}>rtl</code>
+                      </span>
+
                     </li>
-                    <li>
-                      column: same as row but top to bottom
+                    <li style={{
+                        color: "#ff8a00",
+                        fontSize: ".9rem",
+                        textIndent: "-.3rem",
+                        marginBottom: "5px"
+                      }}
+                    >
+
+                      <span style={{
+                          fontSize: "1.3rem",
+                          marginLeft: "5px",
+                          color: "#2e2f3e"
+                        }}
+                      >
+                        <code style={{padding: ".1rem .3rem .2rem",backgroundColor: "#fff6ea"}}>column</code>
+                        {': same as '}
+                        <code style={{padding: ".1rem .3rem .2rem",backgroundColor: "#fff6ea"}}>row</code>
+                        {' but top to bottom'}
+                      </span>
+
                     </li>
-                    <li>
-                      column-reverse: same as row-reverse but bottom to top
+                    <li style={{
+                        color: "#ff8a00",
+                        fontSize: ".9rem",
+                        textIndent: "-.3rem",
+                        marginBottom: "5px"
+                      }}
+                    >
+
+                      <span style={{
+                          fontSize: "1.3rem",
+                          marginLeft: "5px",
+                          color: "#2e2f3e"
+                        }}
+                      >
+                        <code style={{padding: ".1rem .3rem .2rem",backgroundColor: "#fff6ea"}}>column-reverse</code>
+                        {': same as '}
+                        <code style={{padding: ".1rem .3rem .2rem",backgroundColor: "#fff6ea"}}>row-reverse</code>
+                        {' but bottom to top'}
+                      </span>
+
                     </li>
 
                   </ul>
