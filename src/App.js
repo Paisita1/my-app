@@ -245,31 +245,48 @@ class Plans extends React.Component {
   constructor(props) {
     super(props);
 
-    this.whenFocused = this.whenFocused.bind(this);
-    this.whenBlurred = this.whenBlurred.bind(this);
+    this.usernameHandler = this.usernameHandler.bind(this);
+    this.passwordHandler = this.passwordHandler.bind(this);
+    this.loginButtonHandler = this.loginButtonHandler.bind(this);
 
     this.state = {
-      email: styles.inputOnBlur,
-      password: styles.inputOnBlur
+      username: "",
+      password: ""
     }
   }
 
-  whenFocused(e) {
-    if(e == 1) {
-      this.setState({password: styles.inputOnFocus});
-    }
-    else {
-      this.setState({email: styles.inputOnFocus});
-    }
+  usernameHandler(e) {
+    console.log(e.target.value);
+
+    this.setState({username: e.target.value})
   }
 
-  whenBlurred(e) {
-    if(e == 1) {
-      this.setState({password: styles.inputOnBlur});
-    }
-    else {
-      this.setState({email: styles.inputOnBlur});
-    }
+  passwordHandler(e) {
+    console.log(e.target.value);
+
+    this.setState({password: e.target.value})
+  }
+
+  loginButtonHandler() {
+    let requestOptions = {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ "username": this.state.username,
+                               "password": this.state.password})
+    };
+
+    fetch('http://localhost:3001/login', requestOptions)
+    .then(response => response.json())
+    .then(res => {
+      console.log("res")
+      console.log(res)
+      if (res.length == 0 || res[0].Username != this.state.username || res[0].Password != this.state.password) {
+        alert("Wrong username or password. Stop tryna hack my website");
+      }
+      else {
+        window.location.href = '/blog';
+      }
+    })
   }
 
   render() {
@@ -302,13 +319,13 @@ class Plans extends React.Component {
 
                     <div style={{fontSize: "17px", width: "364px", margin: "auto", padding: "6px 0"}}>
 
-                      <input className="fb_email" name="email" id="email" placeholder="Email or Phone Number" autofocus="1" onFocus={() => this.whenFocused(0)} onBlur={() => this.whenBlurred(0)} style={this.state.email} />
+                      <input className="fb_email" name="email" id="email" placeholder="Email or Phone Number" autofocus="1" onChange={this.usernameHandler} style={styles.inputOnBlur} />
 
                     </div>
 
                     <div style={{fontSize: "17px", width: "364px", margin: "auto", padding: "6px 0"}}>
 
-                      <input type="password" className="fb_email" name="password" id="password" placeholder="Password" onFocus={() => this.whenFocused(1)} onBlur={() => this.whenBlurred(1)} style={this.state.password} />
+                      <input type="password" className="fb_email" name="password" id="password" placeholder="Password" onChange={this.passwordHandler} style={styles.inputOnBlur} />
 
                     </div>
 
@@ -316,7 +333,7 @@ class Plans extends React.Component {
 
                   <div style={{paddingTop: "6px"}}>
 
-                    <button type="button" style={styles.loginButton}>{'Log in'}</button>
+                    <button type="button" onClick={this.loginButtonHandler} style={styles.loginButton}>{'Log in'}</button>
 
                   </div>
 
@@ -363,17 +380,6 @@ styles.form = {
   padding: "10px 15px 24px",
   maxWidth: "396px",
   textAlign: "center"
-}
-
-styles.inputOnFocus = {
-  fontSize: "17px",
-  borderRadius: "6px",
-  padding: "14px 16px",
-  width: "330px",
-  height: "22px",
-  border: "1px solid #1877f2",
-  boxShadow: "0 0 0 2px #e7f3ff",
-  caretColor: "#1877f2"
 }
 
 styles.inputOnBlur = {
